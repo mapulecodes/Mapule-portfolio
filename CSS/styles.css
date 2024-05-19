@@ -50,6 +50,19 @@ body {
     background-color: black;
 }
 
+.skills-image {
+  width: 100%; 
+  max-width: 150%; 
+  height: auto; 
+}
+
+.image3 {
+  width: 100%; 
+  max-width: 350%; 
+  height: auto; 
+}
+
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
@@ -69,33 +82,49 @@ body {
   justify-content: space-between;
 }
 
-.project-item {
-  width: calc(33.333% - 30px); /* Adjust width as needed */
-  margin-bottom: 30px;
+.container {
+  width: 80%;
+  margin: auto;
 }
 
-.project-item img {
+.two-col-sec {
+  padding: 20px 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col {
+  width: 100%;
+  padding: 10px;
+}
+
+.img-col img {
   width: 100%;
   height: auto;
 }
 
-.project-item h3 {
-  margin-top: 15px;
-  text-align: center;
+.text-col h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-
-.contact-form-container {
-  width: 80%;
-  max-width: 600px;
-  margin: 50px auto;
+.text-col p {
+  margin-bottom: 10px;
 }
 
-h2 {
-  text-align: center;
-  color: #333;
-}
+@media(min-width: 768px) {
+  .col {
+      width: 48%;
+  }
 
+  .reverse {
+      flex-direction: row-reverse;
+  }
+}
 form {
   background-color: #333;
   padding: 20px;
@@ -104,7 +133,7 @@ form {
 }
 
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 label {
